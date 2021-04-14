@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GITHUB repos</title>
+        <script src="github.js"></script>
+        <style>
+            body{
+                background-image:url("https://kinsta.com/wp-content/uploads/2018/04/what-is-github-1-1.png");
+                background-repeat:no-repeat;
+                background-position:relative;
+                background-size: cover;
+            }
+            #submit{
+                padding:8px 15px;
+                margin:3px 0px;
+                background-color:green;
+                color:white;
+                border:none;
+            }
+            input[type=text]
+            {
+                padding:12px 20px;
+                width:30%;
+                border-radius:1px;
+                
+                border:none;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <h1>GITHUB REPOSITORIES</h1>
+        
+        <input type="text" id="uname" placeholder="Enter the username"><br><br>
+        <button type="submit" onclick="fetchGitrepos()" id="submit">Submit</button><br><br>
+    
+        <div id="table"></div>
+        </center>
+    </body>
